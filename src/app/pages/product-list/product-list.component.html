@@ -1,7 +1,7 @@
 <section id="home-section">
     <div class="container">
-      <div class="row">
-        <div class="col-4" *ngFor="let product of products" style="margin-top: 40px;">
+      <div class="row" *ngIf="products && products.length; else elseBlock">
+        <div class="col-4" *ngFor="let product of products" style="margin-top: 40px; padding-left: 60px;">
           <div class="card" style="width: 18rem">
             <div class="card-body">
               <img src="{{ product.imgUrl }}" alt="" class="card-img-top" />
@@ -12,5 +12,6 @@
           </div>
         </div>
       </div>
+      <ng-template #elseBlock>Không tìm thấy sản phẩm!</ng-template>
     </div>
 </section>
