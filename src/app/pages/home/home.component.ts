@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { User } from 'src/app/common/User';
-import { Product } from 'src/app/common/Product';
+
+import { Product } from 'src/app/common/product';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +8,7 @@ import { Product } from 'src/app/common/Product';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  user:User ={
-    name:'linh',
-    age:19,
-    address:'VietNam'
-    }
+
     products: Product[] =[
       {
         id:1,
