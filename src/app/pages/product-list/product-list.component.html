@@ -4,7 +4,9 @@
         <div class="col-4" *ngFor="let product of products" style="margin-top: 40px;">
           <div class="card" style="width: 18rem">
             <div class="card-body">
-              <img src="{{ product.imgUrl }}" alt="" class="card-img-top" />
+              <a href="product/{{product.id}}">
+                <img src="{{ product.imgUrl }}" alt="" class="card-img-top" />
+              </a>
               <h5 class="card-title">{{ product.name }}</h5>
               <p class="card-text">Giá: {{ product.price }}</p>
               <p class="card-text">Mô tả sản phẩm: {{ product.description }}</p>

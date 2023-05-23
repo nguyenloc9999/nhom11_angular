@@ -11,6 +11,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ProductComponent } from './pages/admin/product/product.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
+import { DetailproductComponent } from './pages/detailproduct/detailproduct.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DashboardComponent } from './pages/admin/dashboard/dashboard.component'
     RegisterComponent,
     NotFoundComponent,
     DashboardComponent,
-    ProductComponent
+    ProductComponent,
+    DetailproductComponent
   ],
   imports: [
     BrowserModule,
