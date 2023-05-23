@@ -1,44 +1,84 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid  p-4">
+    <div><a class="navbar-brand " href="#">Street <span>wear</span></a></div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="menu">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/product">ProductList</a>
+            <a class="nav-link" href="#">tin tức</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/product/:id">ProductDetail</a>
+            <a class="nav-link" href="#">Liên Hệ</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/login">Login</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              sản phẩm
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Giày nam </a></li>
+              <li><a class="dropdown-item" href="#">Giày nữ</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/register">Register</a>
-          </li>
+
         </ul>
-        <form class="d-flex">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
       </div>
+
+
+
+      <!-- <ul class="navbar-nav  " >
+        <li class="nav-item "><a href=""><i class="fas fa-user fs-3"></i></a></li>
+        <li  class="nav-item"><a href=""><i class="fas fa-shopping-cart fs-3"></i></a></li>
+        <li  class="nav-item"><a href=""><i class="fas fa-search fs-3"></i></a> </li>
+
+
+      </ul> -->
+      <div class="icon ">
+        <ul class="navbar-nav">
+          <li class="li nav-item dropdown">
+            <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-search fs-3"></i>
+            </a>
+            <ul class="dropdown-menu ">
+              <li class="dropdown-item">
+                <form class="d-flex" role="search">
+                  <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="li nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user fs-3"></i>
+            </a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item" href="#">Đăng kí </a></li>
+              <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+            </ul>
+          </li>
+          <li class="li nav-item ">
+            <a class="nav-link " href="gio-hang">
+              <i class="fas fa-shopping-cart fs-3"></i>
+
+            </a>
+
+          </li>
+
+        </ul>
+
+      </div>
+
     </div>
-  </nav>
+  </div>
+</nav>
