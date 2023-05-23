@@ -1,7 +1,5 @@
 <main class="chinh container ">
-  <div class="mmenuu">
-
-
+  <!-- <div class="mmenuu">
     <div class="chu fs-1">
       <a href="/" class="logo"><span>BTS 2023</span></a>
     </div>
@@ -23,136 +21,117 @@
 
     </div>
 
-
-
     <div class="buton">
       <button type="button" class="btn btn-danger">chon tat ca</button>
     </div>
-  </div>
+  </div> -->
 
   <div class="new-item">
     <div class="item">
       <div class="item-img">
         <img src="assets/image/product6.webp" alt="">
-        
+
         <div class="buton2">
           <button type="button" class="btn btn-danger">mua san pham</button>
         </div>
       </div>
-     <div class="item-text">
-      <a href="">Chuck Taylor All Star Peace Hi Top</a> 
-      <div class="d-flex me-auto">
-        <p class="me-auto"><span>600 đ</span> </p>
-         <p class="me-auto"><del>100000 d</del> </p> 
+      <div class="item-text">
+        <a href="">Chuck Taylor All Star Peace Hi Top</a>
+        <div class="d-flex me-auto">
+          <p class="me-auto"><span>600 đ</span> </p>
+          <p class="me-auto"><del>100000 d</del> </p>
+        </div>
       </div>
-     </div>
 
     </div>
     <div class="item">
       <div class="item-img">
         <img src="assets/image/product7.webp" alt="">
-        
+
         <div class="buton2">
           <button type="button" class="btn btn-danger">mua san pham</button>
         </div>
       </div>
-     <div class="item-text">
-      <a href="">Chuck Taylor All Star Peace Hi Top</a> 
-      <div class="d-flex me-auto">
-        <p class="me-auto"><span>600 đ</span> </p>
-         <p class="me-auto"><del>100000 d</del> </p> 
+      <div class="item-text">
+        <a href="">Chuck Taylor All Star Peace Hi Top</a>
+        <div class="d-flex me-auto">
+          <p class="me-auto"><span>600 đ</span> </p>
+          <p class="me-auto"><del>100000 d</del> </p>
+        </div>
       </div>
-     </div>
 
     </div>
     <div class="item">
       <div class="item-img">
         <img src="assets/image/product8.webp" alt="">
-        
+
         <div class="buton2">
           <button type="button" class="btn btn-danger">mua san pham</button>
         </div>
       </div>
-     <div class="item-text">
-      <a href="">Chuck Taylor All Star Peace Hi Top</a> 
-      <div class="d-flex me-auto">
-        <p class="me-auto"><span>600 đ</span> </p>
-         <p class="me-auto"><del>100000 d</del> </p> 
+      <div class="item-text">
+        <a href="">Chuck Taylor All Star Peace Hi Top</a>
+        <div class="d-flex me-auto">
+          <p class="me-auto"><span>600 đ</span> </p>
+          <p class="me-auto"><del>100000 d</del> </p>
+        </div>
       </div>
-     </div>
 
     </div>
     <div class="item">
       <div class="item-img">
         <img src="assets/image/product6.webp" alt="">
-        
+
         <div class="buton2">
           <button type="button" class="btn btn-danger">mua san pham</button>
         </div>
       </div>
-     <div class="item-text">
-      <a href="">Chuck Taylor All Star Peace Hi Top</a> 
-      <div class="d-flex me-auto">
-        <p class="me-auto"><span>600 đ</span> </p>
-         <p class="me-auto"><del>100000 d</del> </p> 
+      <div class="item-text">
+        <a href="">Chuck Taylor All Star Peace Hi Top</a>
+        <div class="d-flex me-auto">
+          <p class="me-auto"><span>600 đ</span> </p>
+          <p class="me-auto"><del>100000 d</del> </p>
+        </div>
       </div>
-     </div>
 
     </div>
     <div class="item">
       <div class="item-img">
         <img src="assets/image/product6.webp" alt="">
-        
+
         <div class="buton2">
           <button type="button" class="btn btn-danger">mua san pham</button>
         </div>
       </div>
-     <div class="item-text">
-      <a href="">Chuck Taylor All Star Peace Hi Top</a> 
-      <div class="d-flex me-auto">
-        <p class="me-auto"><span>600 đ</span> </p>
-         <p class="me-auto"><del>100000 d</del> </p> 
+      <div class="item-text">
+        <a href="">Chuck Taylor All Star Peace Hi Top</a>
+        <div class="d-flex me-auto">
+          <p class="me-auto"><span>600 đ</span> </p>
+          <p class="me-auto"><del>100000 d</del> </p>
+        </div>
       </div>
-     </div>
 
     </div>
     <div class="item">
       <div class="item-img">
         <img src="assets/image/product6.webp" alt="">
-        
+
         <div class="buton2">
           <button type="button" class="btn btn-danger">mua san pham</button>
         </div>
       </div>
-     <div class="item-text">
-      <a href="">Chuck Taylor All Star Peace Hi Top</a> 
-      <div class="d-flex me-auto">
-        <p class="me-auto"><span>600 đ</span> </p>
-         <p class="me-auto"><del>100000 d</del> </p> 
+      <div class="item-text">
+        <a href="">Chuck Taylor All Star Peace Hi Top</a>
+        <div class="d-flex me-auto">
+          <p class="me-auto"><span>600 đ</span> </p>
+          <p class="me-auto"><del>100000 d</del> </p>
+        </div>
       </div>
-     </div>
 
     </div>
 
   </div>
 
   <hr>
-  <section id="home-section">
-    <div class="container">
-      <div class="row" *ngIf="products && products.length; else elseBlock">
-        <div class="col-4" *ngFor="let product of products">
-          <div class="card" style="width: 18rem">
-            <img src="{{ product.image }}" alt="{{ product.name }}" />
-            <div class="card-body">
-              <h5 class="card-title">{{ product.name }}</h5>
-              <p class="card-text">
-                {{ product.price }}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <ng-template #elseBlock> Không tìm thấy sản phẩm!</ng-template>
-    </div>
-  </section>
+  
 </main>
