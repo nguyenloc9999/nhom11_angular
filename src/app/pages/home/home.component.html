@@ -1,5 +1,5 @@
 <main class="chinh container ">
-  <!-- <div class="mmenuu">
+  <div class="mmenuu">
     <div class="chu fs-1">
       <a href="/" class="logo"><span>BTS 2023</span></a>
     </div>
@@ -21,11 +21,37 @@
 
     </div>
 
-    <div class="buton">
-      <button type="button" class="btn btn-danger">chon tat ca</button>
-    </div>
-  </div> -->
 
+    <div class="">
+
+      <form class="d-flex" (ngSubmit)="onSubmit() ">
+
+        <input class="my-4" type="text" name="my-search" placeholder="Search" aria-label="Search" [(ngModel)]="search"
+          required>
+
+
+        <button class="btn btn-outline-success my-4" type="submit"> <i class="fas fa-search fs-3"></i></button>
+      </form>
+      <div class="" *ngIf="product && product.length ==0">không tìm thấy sản phẩm</div>
+    </div>
+  </div>
+  <div>
+    <div class="row" *ngIf="product && product.length; ">
+      <div class="col-4" *ngFor="let p of product" style="margin-top: 40px;">
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <a href="product/{{p.id}}">
+              <img src="{{ p.imgUrl }}" alt="" class="card-img-top" />
+            </a>
+            <h5 class="card-title">{{ p.name }}</h5>
+            <p class="card-text">Giá: {{ p.price }}</p>
+            <p class="card-text">Mô tả sản phẩm: {{ p.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
   <div class="new-item">
     <div class="item">
       <div class="item-img">
@@ -133,5 +159,5 @@
   </div>
 
   <hr>
-  
+
 </main>
