@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './pages/home/home.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ProductListComponent } from './pages/product-list/product-list.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ProductListComponent } from './pages/product-list/product-list.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

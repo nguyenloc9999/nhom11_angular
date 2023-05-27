@@ -8,7 +8,8 @@ import products from 'src/app/data/product';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-
+  products = products;
+  p: number = 1
   product : Product[] | undefined
   search : any;
   onSubmit() {

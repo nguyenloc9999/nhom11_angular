@@ -7,5 +7,6 @@ import products from '../../data/product';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  products = products
+  products = products;
+  p: number = 1
 }
